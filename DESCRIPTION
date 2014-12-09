@@ -1,0 +1,16 @@
+Package: EduRpkg
+Type: Package
+Title: Interfaces Interativas com o Rpanel
+Version: 0
+Author: Eduardo Elias Ribeiro Junior
+Maintainer: Eduardo Junior <eduardo.jr@ufpr.br>
+Description: Voltado para ensino-aprendizagem de estatística as funções
+programadas neste pacote proporcionam uma melhor compreensão de
+conceitos estatísticos por meio de interaces interativas.
+Depends:
+    R (>= 3.1.2)
+Imports:
+    rpanel,
+License: GPL
+URL: https://github.com/JrEduardo/EduRPkg
+BugReports: https://github.com/JrEduardo/EduRPkg/issues
