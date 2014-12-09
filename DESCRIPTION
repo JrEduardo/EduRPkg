@@ -5,8 +5,8 @@ Version: 0
 Author: Eduardo Elias Ribeiro Junior
 Maintainer: Eduardo Junior <eduardo.jr@ufpr.br>
 Description: Voltado para ensino-aprendizagem de estatística as funções
-programadas neste pacote proporcionam uma melhor compreensão de
-conceitos estatísticos por meio de interaces interativas.
+    programadas neste pacote proporcionam uma melhor compreensão de
+    conceitos estatísticos por meio de interaces interativas.
 Depends:
     R (>= 3.1.2)
 Imports:
