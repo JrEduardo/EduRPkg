@@ -84,4 +84,3 @@ rp.binom <- function(){
                 labels="Visualizar a prob. acumulada")
 }
 
-rp.binom()

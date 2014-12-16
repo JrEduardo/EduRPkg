@@ -27,9 +27,8 @@ source_https <- function(url, ...) {
   })
 }
 
-source("list")
-
-source(funs)
+source_https("https://raw.githubusercontent.com/JrEduardo/EduRPkg/master/list.functions.R")
+source_https(funs)
 ```
 
 ## Bug report

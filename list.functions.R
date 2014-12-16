@@ -6,6 +6,11 @@
 ##=============================================================================
 
 funs <- c(
-    ""
+    "https://raw.githubusercontent.com/JrEduardo/EduRPkg/master/rp.binom.R",
+    "https://raw.githubusercontent.com/JrEduardo/EduRPkg/master/rp.norm.R"
 )
+
+
+
+
 
