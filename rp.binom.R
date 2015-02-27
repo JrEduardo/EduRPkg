@@ -19,7 +19,7 @@
 #' }
 
 rp.binom <- function(){
-    pb <- function(panel){
+    action <- function(panel){
         with(panel, {
             ## Plotando a distribuição
             x <- 0:size
@@ -69,18 +69,17 @@ rp.binom <- function(){
     ## Construção do painel e controladores
     panel <- rp.control(title="Distribuição Binomial", size=c(300,100))
     rp.slider(panel, size, from=1, to=80, initval=10, resolution=1,
-              action=pb, showvalue=TRUE, title="size")
+              action=action, showvalue=TRUE, title="size")
     rp.slider(panel, prob, from=0.01, to=0.99, initval=0.5, resolution=0.01,
-              action=pb, showvalue=TRUE, title="prob")
+              action=action, showvalue=TRUE, title="prob")
     rp.doublebutton(panel, q, step = 1, title = "Quantil", showvalue=TRUE,
-                    action = pb, range = c(0, 80), initval=0)
+                    action = action, range = c(0, 80), initval=0)
     ## rp.slider(panel, q, from=0, to=80, initval=0, resolution=1,
     ##           action=pb, showvalue=TRUE, title="Quantil")
-    rp.checkbox(panel, showEX, action=pb, title="E(X)",
+    rp.checkbox(panel, showEX, action=action, title="E(X)",
                 labels="Esperança de X")
-    rp.checkbox(panel, showVX, action=pb, title="EP(X)",
+    rp.checkbox(panel, showVX, action=action, title="EP(X)",
                 labels="Desvio Padrão de X")
-    rp.checkbox(panel, showPr, action=pb, title="Prob. acumulada",
+    rp.checkbox(panel, showPr, action=action, title="Prob. acumulada",
                 labels="Visualizar a prob. acumulada")
 }
-
