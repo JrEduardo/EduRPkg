@@ -20,7 +20,7 @@
 #' }
 
 rp.norm <- function(){
-    pn <- function(panel){
+    action <- function(panel){
         with(panel, {
             if(des <= 0) des <- 0.01
             ## Plotando a distribuição de X
@@ -81,15 +81,15 @@ rp.norm <- function(){
     ## Construção do painel e controladores
     panel <- rp.control(title="Distribuição Normal", size=c(300,100))
     rp.slider(panel, mu, from=-4, to=4, initval=0, resolution=0.1,
-              action=pn, showvalue=TRUE, title="Média")
+              action=action, showvalue=TRUE, title="Média")
     rp.slider(panel, des, from=0, to=3, initval=1, resolution=0.05,
-              action=pn, showvalue=TRUE, title="Desvio Padrão")
-    rp.slider(panel, q, from=0, to=4, initval=0, resolution=0.1,
-              action=pn, showvalue=TRUE, title="quantil")
-    rp.checkbox(panel, showEX, action=pn, title="E(X)",
+              action=action, showvalue=TRUE, title="Desvio Padrão")
+    rp.slider(panel, q, from=-4, to=4, initval=0, resolution=0.1,
+              action=action, showvalue=TRUE, title="quantil")
+    rp.checkbox(panel, showEX, action=action, title="E(X)",
                 labels="Esperança de X")
-    rp.checkbox(panel, showVX, action=pn, title="EP(X)",
+    rp.checkbox(panel, showVX, action=action, title="EP(X)",
                 labels="Desvio Padrão de X")
-    rp.checkbox(panel, showPr, action=pn, title="Prob. acumulada",
+    rp.checkbox(panel, showPr, action=action, title="Prob. acumulada",
                 labels="Visualizar a prob. acumulada")
 }
